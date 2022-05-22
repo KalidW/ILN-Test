@@ -75,6 +75,9 @@ function goNext() {
 }
 randomButton.addEventListener("click", () => {
   answer.style.display = "none";
+  if (flashcards.length === 0) {
+    return (question.innerHTML = ""), (answer.innerHTML = "");
+  }
   const randomNumber = Math.floor(Math.random() * flashcards.length);
   index = randomNumber;
   question.innerHTML = flashcards[index].question;
