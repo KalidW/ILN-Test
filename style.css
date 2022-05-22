@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    background-color: whitesmoke;
+
+}
+header{
+    color: white;
+    background-color: rgb(0, 208, 255);
+}
+button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.111);
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0px;
+}
+.nav button{
+    font-family: inherit ;
+}
+.create-box, .edit-box{
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.517);
+}
+.create-box input{
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid lightgrey
+}
+.create-box button{
+    width: fit-content;
+    margin-top: 5px;
+}
+.flashcards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    margin: auto;
+    padding: 0px 10px;
+}
+.flashcard{
+    width: 500px;
+    height: 300px;
+    word-wrap: break-word;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.517);
+    padding: 20px;
+}
+.display-buttons{
+    font-family: inherit;
+    width: fit-content;
+    margin: auto;
+
+}
+.flashcard h2{
+    font-size: 1rem;
+}
+.list-flashcard{
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px; 
+    background:#fff;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+    position: relative;
+}

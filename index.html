@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="header">
+                <h1>ILN Flashcards</h1>
+                <div>
+
+                    <button id="delete_cards">Delete All</button>
+                    <button id="view">View All Cards</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="conatiner">
+        <div class="create-box">
+            <h2 style="text-align:center">Create Flashcard</h2>
+            <label for="question">Question:</label>
+            <input type="text" id="question-input">
+            <br>
+            <label for="answer">Answer:</label>
+            <input type="text" id="answer-input">
+
+            <div>
+                <button class="save-button"> Save</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="conatiner">
+        <div class="flashcard">
+
+            <div>
+                <h1 style="text-align:center" class="question"></h1>
+            </div>
+            <br>
+            <br>
+            <div>
+                <h2 style="text-align:center; display: none;" class="answer"></h2>
+            </div>
+        </div>
+        <div class="display-buttons">
+            <button class="back-button"> Back </button>
+            <button class="random-button"> Random </button>
+            <button class="next-button"> Next </button>
+            <button class="delete">Delete</button>
+            <button class="edit">Edit</button>
+        </div>
+    </div>
+    <div style="display: none;" class="edit-box">
+        <h2 style="text-align:center">Edit Flashcard</h2>
+        <label for="question">Question:</label>
+        <textarea type="text" id="question-input-edit"></textarea>
+
+        <br>
+        <label for="answer">Answer:</label>
+        <textarea type="text" id="answer-input-edit"></textarea>
+
+        <div>
+            <button class="save-edit-button"> Save</button>
+            <button class="edit-close">Close</button>
+        </div>
+    </div>
+    <section>
+        <div class="flashcards-parent">
+            <div class="flashcards"></div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
