@@ -143,6 +143,7 @@ saveEditButton.addEventListener("click", () => {
 
   question.innerHTML = flashcards[index].question;
   answer.innerHTML = flashcards[index].answer;
+  editBox.style.display = "none";
 });
 // View all cards button handler, Updates cards list
 viewCardsButton.addEventListener("click", () => {
