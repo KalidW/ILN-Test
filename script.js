@@ -180,3 +180,16 @@ function removeCards() {
   const parent = document.querySelector(".flashcards");
   parent.replaceChildren();
 }
+// event listener on flashcards array for .push()
+const pushify = function(arr, callback) {
+  arr.push = function(e) {
+      Array.prototype.push.call(arr, e);
+      callback(arr);
+  };
+};
+// updates the list of cards everytime new card pushed
+pushify(flashcards, function() {
+  removeCards(); 
+  listCards();
+});
+
